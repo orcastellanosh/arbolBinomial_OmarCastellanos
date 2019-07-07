@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-07-2019 a las 22:59:55
+-- Tiempo de generación: 08-07-2019 a las 00:04:24
 -- Versión del servidor: 10.1.34-MariaDB
 -- Versión de PHP: 7.2.8
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `binomial_db`
 --
+CREATE DATABASE IF NOT EXISTS `binomial_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `binomial_db`;
 
 -- --------------------------------------------------------
 

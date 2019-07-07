@@ -1,10 +1,13 @@
+CREATE DATABASE IF NOT EXISTS `binomial_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `binomial_db`;
+
+
 CREATE TABLE `nodos` (
   `id` int(100) NOT NULL,
   `padre` int(10) NOT NULL,
   `hijo` int(10) NOT NULL,
   `estado` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 
 INSERT INTO `nodos` (`id`, `padre`, `hijo`, `estado`) VALUES
 (2, 45, 23, NULL),
@@ -30,3 +33,4 @@ ALTER TABLE `nodos`
 ALTER TABLE `nodos`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
+
